@@ -45,6 +45,10 @@ export default {
       drawer: false,
       items: [
         {
+          title: 'Login',
+          route: 'login',
+        },
+        {
           icon: 'home',
           title: 'Início',
           route: 'home',
