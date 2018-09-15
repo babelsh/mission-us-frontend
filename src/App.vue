@@ -25,10 +25,10 @@
     </v-navigation-drawer>
     <v-toolbar app class="primary">
       <v-toolbar-side-icon
-        class="text-white"
+        class="white--text"
         @click.stop="drawer = !drawer"
       ></v-toolbar-side-icon>
-      <v-toolbar-title class="text-white" v-text="title"></v-toolbar-title>
+      <v-toolbar-title class="subheading white--text" v-text="title"></v-toolbar-title>
     </v-toolbar>
     <v-content>
       <router-view/>
@@ -55,10 +55,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.text-white {
-  color: white;
-  font-size: 18px;
-}
-</style>
