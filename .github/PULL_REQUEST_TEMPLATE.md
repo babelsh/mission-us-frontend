@@ -2,7 +2,7 @@ Describe what you did "(>_<)"
 
 ## Pics
 
-If you made chages on screens, put here, please.
+If you made changes on screens, put here, please.
 
 ## TESTS
 
