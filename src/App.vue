@@ -2,6 +2,7 @@
   <v-app>
     <v-navigation-drawer
       persistent
+      clipped
       v-model="drawer"
       enable-resize-watcher
       fixed
@@ -23,7 +24,7 @@
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar app class="primary">
+    <v-toolbar app clipped-left class="primary">
       <v-toolbar-side-icon
         class="white--text"
         @click.stop="drawer = !drawer"
