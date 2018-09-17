@@ -1,8 +1,8 @@
-Describe what you do "(>_<)"
+Describe what you did "(>_<)"
 
 ## Pics
 
-If you made changes screens, put here, please.
+If you made chages on screens, put here, please.
 
 ## TESTS
 
