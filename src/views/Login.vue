@@ -41,7 +41,7 @@ export default {
       showPassword: false,
     };
   },
-}
+};
 </script>
 
 <style scoped>
