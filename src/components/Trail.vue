@@ -44,7 +44,7 @@ export default {
     imageSrc: {
       type: String,
       default: '',
-    } 
-  }
-}
+    },
+  },
+};
 </script>
