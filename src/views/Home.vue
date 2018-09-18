@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Trail from './Trail'
+import Trail from '@/components/Trail'
 
 export default {
   name: 'home',

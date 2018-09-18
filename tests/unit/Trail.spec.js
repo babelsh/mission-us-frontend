@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils';
-import Trail from '../../src/views/Trail.vue';
+import Trail from '@/components/Trail.vue';
 
 describe('Trail', () => {
   it('Trail works with property!', () => {
