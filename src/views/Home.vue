@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import Trail from '@/components/Trail'
+import Trail from '@/components/Trail.vue';
 
 export default {
   name: 'home',
   components: {
     Trail,
   },
-}
+};
 </script>
