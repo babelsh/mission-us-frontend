@@ -9,14 +9,14 @@
 </template>
 
 <script>
-import Trail from './Trail';
+import Trail from './Trail'
 
 export default {
   name: 'home',
   components: {
     Trail,
   },
-};
+}
 
 </script>
 
