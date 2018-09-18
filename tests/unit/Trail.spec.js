@@ -2,7 +2,7 @@ import { mount } from '@vue/test-utils';
 import Trail from '../../src/views/Trail.vue';
 
 describe('Trail', () => {
-  it('works', () => {
+  it('Trail works with property!', () => {
     const wrapper = mount(Trail, {
       propsData: {
         title: 'titulo',
