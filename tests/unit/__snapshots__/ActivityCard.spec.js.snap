@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ActivityCard renders the component properly 1`] = `
+<div class="v-card theme--light">
+  <div class="v-responsive v-image" style="height: 200px;">
+    <div class="v-responsive__content"></div>
+  </div>
+  <div class="v-card__title">
+    <div><span class="title"></span></div>
+  </div>
+  <div class="v-card__actions" style="padding-top: 0px;"><button type="button" class="v-btn v-btn--flat theme--light">
+      <div class="v-btn__content">
+        Saber mais
+      </div>
+    </button>
+    <div class="spacer"></div> <button type="button" class="v-btn theme--light secondary">
+      <div class="v-btn__content">
+        Feito
+      </div>
+    </button>
+  </div>
+</div>
+`;
