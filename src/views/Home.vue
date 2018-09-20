@@ -17,9 +17,8 @@
             :finalized="activity.finalized"
             :img-src="activity.imgsrc"
             :title="activity.title"
-          ></activity-card>
+          />
         </v-flex>
-
       </v-layout>
     </v-container>
   </v-container>

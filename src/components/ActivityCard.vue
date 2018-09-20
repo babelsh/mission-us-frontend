@@ -2,9 +2,9 @@
   <v-container pa-0>
     <v-card>
       <v-img
-        :height="imageHeight"
+        height="200px"
         :src="imgSrc"
-      ></v-img>
+      />
       <v-card-title class="no-padding-bottom">
         <div class="text-truncate">
           <p class="title text-truncate">
@@ -19,9 +19,12 @@
         <v-btn flat>
           Saber mais
         </v-btn>
-        <v-spacer></v-spacer>
-        <v-btn :color="buttonColor">
-          {{ finalized ? 'Finalizada' : 'Feito' }}
+        <v-spacer />
+        <v-icon color="success" v-if="finalized">
+          done
+        </v-icon>
+        <v-btn color="primary" v-else>
+          Feito
         </v-btn>
       </v-card-actions>
     </v-card>
@@ -47,32 +50,19 @@ export default {
     },
     finalized: Boolean,
   },
-  computed: {
-    buttonColor() {
-      return this.finalized ? 'success' : 'secondary';
-    },
-    imageHeight() {
-      switch (this.$vuetify.breakpoint.name) {
-        case 'xs': return '150px';
-        case 'sm': return '200px';
-        case 'md': return '200px';
-        case 'lg': return '200px';
-        case 'xl': return '200px';
-        default: console.log('inválid screen size.');
-      }
-
-      return '';
-    },
-  },
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .no-padding-bottom {
   padding-bottom: 0px !important;
 }
 
 .no-padding-top {
   padding-top: 0px !important;
+}
+
+.v-icon {
+  pointer-events: none !important;
 }
 </style>
