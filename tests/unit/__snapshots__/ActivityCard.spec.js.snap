@@ -21,7 +21,7 @@ exports[`ActivityCard renders the component properly 1`] = `
           Saber mais
         </div>
       </button>
-      <div class="spacer"></div> <button type="button" class="v-btn theme--light secondary">
+      <div class="spacer"></div> <button type="button" class="v-btn theme--light primary">
         <div class="v-btn__content">
           Feito
         </div>

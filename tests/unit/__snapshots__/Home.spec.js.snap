@@ -42,11 +42,9 @@ exports[`Home renders the component properly 1`] = `
                   Saber mais
                 </div>
               </button>
-              <div class="spacer"></div> <button type="button" class="v-btn theme--light success">
-                <div class="v-btn__content">
-                  Finalizada
-                </div>
-              </button>
+              <div class="spacer"></div> <i aria-hidden="true" class="v-icon material-icons theme--light success--text">
+                done
+              </i>
             </div>
           </div>
         </div>
@@ -73,11 +71,9 @@ exports[`Home renders the component properly 1`] = `
                   Saber mais
                 </div>
               </button>
-              <div class="spacer"></div> <button type="button" class="v-btn theme--light success">
-                <div class="v-btn__content">
-                  Finalizada
-                </div>
-              </button>
+              <div class="spacer"></div> <i aria-hidden="true" class="v-icon material-icons theme--light success--text">
+                done
+              </i>
             </div>
           </div>
         </div>
@@ -104,7 +100,7 @@ exports[`Home renders the component properly 1`] = `
                   Saber mais
                 </div>
               </button>
-              <div class="spacer"></div> <button type="button" class="v-btn theme--light secondary">
+              <div class="spacer"></div> <button type="button" class="v-btn theme--light primary">
                 <div class="v-btn__content">
                   Feito
                 </div>
@@ -135,7 +131,7 @@ exports[`Home renders the component properly 1`] = `
                   Saber mais
                 </div>
               </button>
-              <div class="spacer"></div> <button type="button" class="v-btn theme--light secondary">
+              <div class="spacer"></div> <button type="button" class="v-btn theme--light primary">
                 <div class="v-btn__content">
                   Feito
                 </div>
