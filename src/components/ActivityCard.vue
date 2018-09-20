@@ -5,7 +5,7 @@
         :height="imageHeight"
         :src="imgSrc"
       ></v-img>
-      <v-card-title style="padding-bottom: 0px">
+      <v-card-title class="no-padding-bottom">
         <div class="text-truncate">
           <p class="title text-truncate">
             {{ title }}
@@ -15,7 +15,7 @@
           </p>
         </div>
       </v-card-title>
-      <v-card-actions style="padding-top: 0px">
+      <v-card-actions class="no-padding-top">
         <v-btn flat>
           Saber mais
         </v-btn>
@@ -66,3 +66,13 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.no-padding-bottom {
+  padding-bottom: 0px !important;
+}
+
+.no-padding-top {
+  padding-top: 0px !important;
+}
+</style>
