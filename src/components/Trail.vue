@@ -1,32 +1,22 @@
 <template>
-  <div>
-    <v-container text-xs-center>
-      <v-layout>
-        <v-flex lg8>
+  <v-container fluid>
+    <div>
+      <v-layout text-xs-center>
+        <v-flex>
           <img src="../images/logo.png" height="150px">
         </v-flex>
       </v-layout>
-    </v-container>
-    <v-container>
-      <v-layout>
-        <v-flex xs12>
-          <p class="headline">{{ title }}</p>
-        </v-flex>
-      </v-layout>
-      <v-layout>
-        <v-flex xs12>
-          <p class="subheading grey--text">
-            {{ abstract }}
-          </p>
-        </v-flex>
-      </v-layout>
-      <v-layout>
-        <v-flex xs7 offset-xs7 offset-lg0>
-          <v-btn class="primary">SABER MAIS</v-btn>
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </div>
+    </div>
+    <p class="title">{{ title }}</p>
+    <p class="body-2 grey--text text-truncate">
+      {{ abstract }}
+    </p>
+    <v-layout>
+      <v-flex xs12 :text-xs-right="isSmall">
+        <v-btn class="primary">SABER MAIS</v-btn>
+      </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
 <script>
@@ -44,6 +34,12 @@ export default {
     imageSrc: {
       type: String,
       default: '',
+    },
+  },
+  computed: {
+    isSmall() {
+      return this.$vuetify.breakpoint.name === 'xs'
+        || this.$vuetify.breakpoint.name === 'sm';
     },
   },
 };

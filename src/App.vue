@@ -60,3 +60,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+p {
+  margin-bottom: 5px;
+}
+</style>

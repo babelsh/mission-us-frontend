@@ -1,24 +1,31 @@
 <template>
-  <v-card>
-    <v-img
-      :height="imageHeight"
-      :src="imgSrc"
-    ></v-img>
-    <v-card-title>
-      <div>
-        <span class="title">{{ title }}</span>
-      </div>
-    </v-card-title>
-    <v-card-actions style="padding-top: 0px">
-      <v-btn flat>
-        Saber mais
-      </v-btn>
-      <v-spacer></v-spacer>
-      <v-btn color="secondary">
-        Feito
-      </v-btn>
-    </v-card-actions>
-  </v-card>
+  <v-container pa-0>
+    <v-card>
+      <v-img
+        :height="imageHeight"
+        :src="imgSrc"
+      ></v-img>
+      <v-card-title style="padding-bottom: 0px">
+        <div class="text-truncate">
+          <p class="title text-truncate">
+            {{ title }}
+          </p>
+          <p class="body-2 grey--text text-truncate">
+            {{ description }}
+          </p>
+        </div>
+      </v-card-title>
+      <v-card-actions style="padding-top: 0px">
+        <v-btn flat>
+          Saber mais
+        </v-btn>
+        <v-spacer></v-spacer>
+        <v-btn :color="buttonColor">
+          {{ finalized ? 'Finalizada' : 'Feito' }}
+        </v-btn>
+      </v-card-actions>
+    </v-card>
+  </v-container>
 </template>
 
 <script>
@@ -38,8 +45,12 @@ export default {
       type: String,
       required: true,
     },
+    finalized: Boolean,
   },
   computed: {
+    buttonColor() {
+      return this.finalized ? 'success' : 'secondary';
+    },
     imageHeight() {
       switch (this.$vuetify.breakpoint.name) {
         case 'xs': return '150px';
