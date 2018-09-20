@@ -6,7 +6,7 @@ exports[`ActivityCard renders the component properly 1`] = `
     <div class="v-responsive v-image" style="height: 200px;">
       <div class="v-responsive__content"></div>
     </div>
-    <div class="v-card__title" style="padding-bottom: 0px;">
+    <div class="v-card__title no-padding-bottom">
       <div class="text-truncate">
         <p class="title text-truncate">
 
@@ -16,7 +16,7 @@ exports[`ActivityCard renders the component properly 1`] = `
         </p>
       </div>
     </div>
-    <div class="v-card__actions" style="padding-top: 0px;"><button type="button" class="v-btn v-btn--flat theme--light">
+    <div class="v-card__actions no-padding-top"><button type="button" class="v-btn v-btn--flat theme--light">
         <div class="v-btn__content">
           Saber mais
         </div>

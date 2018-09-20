@@ -27,7 +27,7 @@ exports[`Home renders the component properly 1`] = `
               <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;" name="fade-transition" mode="in-out"></div>
               <div class="v-responsive__content"></div>
             </div>
-            <div class="v-card__title" style="padding-bottom: 0px;">
+            <div class="v-card__title no-padding-bottom">
               <div class="text-truncate">
                 <p class="title text-truncate">
                   Jogar futebol
@@ -37,7 +37,7 @@ exports[`Home renders the component properly 1`] = `
                 </p>
               </div>
             </div>
-            <div class="v-card__actions" style="padding-top: 0px;"><button type="button" class="v-btn v-btn--flat theme--light">
+            <div class="v-card__actions no-padding-top"><button type="button" class="v-btn v-btn--flat theme--light">
                 <div class="v-btn__content">
                   Saber mais
                 </div>
@@ -58,7 +58,7 @@ exports[`Home renders the component properly 1`] = `
               <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;" name="fade-transition" mode="in-out"></div>
               <div class="v-responsive__content"></div>
             </div>
-            <div class="v-card__title" style="padding-bottom: 0px;">
+            <div class="v-card__title no-padding-bottom">
               <div class="text-truncate">
                 <p class="title text-truncate">
                   Estudar história
@@ -68,7 +68,7 @@ exports[`Home renders the component properly 1`] = `
                 </p>
               </div>
             </div>
-            <div class="v-card__actions" style="padding-top: 0px;"><button type="button" class="v-btn v-btn--flat theme--light">
+            <div class="v-card__actions no-padding-top"><button type="button" class="v-btn v-btn--flat theme--light">
                 <div class="v-btn__content">
                   Saber mais
                 </div>
@@ -89,7 +89,7 @@ exports[`Home renders the component properly 1`] = `
               <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;" name="fade-transition" mode="in-out"></div>
               <div class="v-responsive__content"></div>
             </div>
-            <div class="v-card__title" style="padding-bottom: 0px;">
+            <div class="v-card__title no-padding-bottom">
               <div class="text-truncate">
                 <p class="title text-truncate">
                   Jogar videogame
@@ -99,7 +99,7 @@ exports[`Home renders the component properly 1`] = `
                 </p>
               </div>
             </div>
-            <div class="v-card__actions" style="padding-top: 0px;"><button type="button" class="v-btn v-btn--flat theme--light">
+            <div class="v-card__actions no-padding-top"><button type="button" class="v-btn v-btn--flat theme--light">
                 <div class="v-btn__content">
                   Saber mais
                 </div>
@@ -120,7 +120,7 @@ exports[`Home renders the component properly 1`] = `
               <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;" name="fade-transition" mode="in-out"></div>
               <div class="v-responsive__content"></div>
             </div>
-            <div class="v-card__title" style="padding-bottom: 0px;">
+            <div class="v-card__title no-padding-bottom">
               <div class="text-truncate">
                 <p class="title text-truncate">
                   Celebração
@@ -130,7 +130,7 @@ exports[`Home renders the component properly 1`] = `
                 </p>
               </div>
             </div>
-            <div class="v-card__actions" style="padding-top: 0px;"><button type="button" class="v-btn v-btn--flat theme--light">
+            <div class="v-card__actions no-padding-top"><button type="button" class="v-btn v-btn--flat theme--light">
                 <div class="v-btn__content">
                   Saber mais
                 </div>
