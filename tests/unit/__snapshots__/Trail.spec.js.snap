@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Trail renders the component properly 1`] = `
+<div class="container fluid">
+  <div>
+    <div class="layout text-xs-center">
+      <div class="flex"><img src="../images/logo.png" height="150px"></div>
+    </div>
+  </div>
+  <p class="title"></p>
+  <p class="body-2 grey--text text-truncate">
+
+  </p>
+  <div class="layout">
+    <div class="flex xs12"><button type="button" class="primary v-btn theme--light">
+        <div class="v-btn__content">SABER MAIS</div>
+      </button></div>
+  </div>
+</div>
+`;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login renders the component properly 1`] = `
+<vcontainer-stub tag="div" text-xs-center="">
+  <vlayout-stub tag="div" align-center="" justify-center="">
+    <vflex-stub tag="div" xs12="">
+      <p class="headline">Bem-vindo ao Missão Nós!</p>
+    </vflex-stub>
+  </vlayout-stub>
+  <vlayout-stub tag="div" align-center="" justify-center="">
+    <vflex-stub tag="div"><img src="../images/logo.png" height="150px"></vflex-stub>
+  </vlayout-stub>
+  <vlayout-stub tag="div" align-center="" justify-center="">
+    <vflex-stub tag="div" md6="" lg6="" xs10="">
+      <vform-stub>
+        <vtextfield-stub label="E-mail" required="" autofocus=""></vtextfield-stub>
+        <vtextfield-stub label="Senha" required="" persistent-hint="" type="password" append-icon="visibility"></vtextfield-stub>
+      </vform-stub>
+    </vflex-stub>
+  </vlayout-stub>
+  <vlayout-stub tag="div" align-center="" justify-center="">
+    <vflex-stub tag="div" xs10="" lg2="">
+      <vbtn-stub activeclass="v-btn--active" block="true" ripple="true" tag="button" type="button" color="primary">Prosseguir</vbtn-stub>
+    </vflex-stub>
+  </vlayout-stub>
+</vcontainer-stub>
+`;

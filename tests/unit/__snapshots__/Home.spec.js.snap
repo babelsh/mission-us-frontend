@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders the component properly 1`] = `
+<div class="container fluid">
+  <div class="container fluid">
+    <div>
+      <div class="layout text-xs-center">
+        <div class="flex"><img src="../images/logo.png" height="150px"></div>
+      </div>
+    </div>
+    <p class="title">Trilha 1</p>
+    <p class="body-2 grey--text text-truncate">
+      Esta é a primeira trilha de todas. Vamos lá?
+    </p>
+    <div class="layout">
+      <div class="flex xs12"><button type="button" class="primary v-btn theme--light">
+          <div class="v-btn__content">SABER MAIS</div>
+        </button></div>
+    </div>
+  </div>
+  <div class="container fluid grid-list-md ma-0 pa-0">
+    <div class="layout row wrap">
+      <div class="flex xs12 sm6 md4 lg3 xl3">
+        <div class="container pa-0">
+          <div class="v-card theme--light">
+            <div class="v-responsive v-image" style="height: 200px;">
+              <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;" name="fade-transition" mode="in-out"></div>
+              <div class="v-responsive__content"></div>
+            </div>
+            <div class="v-card__title no-padding-bottom">
+              <div class="text-truncate">
+                <p class="title text-truncate">
+                  Jogar futebol
+                </p>
+                <p class="body-2 grey--text text-truncate">
+                  Jogar futebol com os vizinhos no play
+                </p>
+              </div>
+            </div>
+            <div class="v-card__actions no-padding-top"><button type="button" class="v-btn v-btn--flat theme--light">
+                <div class="v-btn__content">
+                  Saber mais
+                </div>
+              </button>
+              <div class="spacer"></div> <i aria-hidden="true" class="v-icon material-icons theme--light success--text">
+                done
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex xs12 sm6 md4 lg3 xl3">
+        <div class="container pa-0">
+          <div class="v-card theme--light">
+            <div class="v-responsive v-image" style="height: 200px;">
+              <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;" name="fade-transition" mode="in-out"></div>
+              <div class="v-responsive__content"></div>
+            </div>
+            <div class="v-card__title no-padding-bottom">
+              <div class="text-truncate">
+                <p class="title text-truncate">
+                  Estudar história
+                </p>
+                <p class="body-2 grey--text text-truncate">
+                  Utilizar de mídias audiovisuais para estudo de história
+                </p>
+              </div>
+            </div>
+            <div class="v-card__actions no-padding-top"><button type="button" class="v-btn v-btn--flat theme--light">
+                <div class="v-btn__content">
+                  Saber mais
+                </div>
+              </button>
+              <div class="spacer"></div> <i aria-hidden="true" class="v-icon material-icons theme--light success--text">
+                done
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex xs12 sm6 md4 lg3 xl3">
+        <div class="container pa-0">
+          <div class="v-card theme--light">
+            <div class="v-responsive v-image" style="height: 200px;">
+              <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;" name="fade-transition" mode="in-out"></div>
+              <div class="v-responsive__content"></div>
+            </div>
+            <div class="v-card__title no-padding-bottom">
+              <div class="text-truncate">
+                <p class="title text-truncate">
+                  Jogar videogame
+                </p>
+                <p class="body-2 grey--text text-truncate">
+                  Utilizar de jogos sérios para incentivar o ensino de matemática
+                </p>
+              </div>
+            </div>
+            <div class="v-card__actions no-padding-top"><button type="button" class="v-btn v-btn--flat theme--light">
+                <div class="v-btn__content">
+                  Saber mais
+                </div>
+              </button>
+              <div class="spacer"></div> <button type="button" class="v-btn theme--light primary">
+                <div class="v-btn__content">
+                  Feito
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex xs12 sm6 md4 lg3 xl3">
+        <div class="container pa-0">
+          <div class="v-card theme--light">
+            <div class="v-responsive v-image" style="height: 200px;">
+              <div class="v-image__image v-image__image--preload v-image__image--cover" style="background-position: center center;" name="fade-transition" mode="in-out"></div>
+              <div class="v-responsive__content"></div>
+            </div>
+            <div class="v-card__title no-padding-bottom">
+              <div class="text-truncate">
+                <p class="title text-truncate">
+                  Celebração
+                </p>
+                <p class="body-2 grey--text text-truncate">
+                  Celebrar o desenvolvimento da trilha
+                </p>
+              </div>
+            </div>
+            <div class="v-card__actions no-padding-top"><button type="button" class="v-btn v-btn--flat theme--light">
+                <div class="v-btn__content">
+                  Saber mais
+                </div>
+              </button>
+              <div class="spacer"></div> <button type="button" class="v-btn theme--light primary">
+                <div class="v-btn__content">
+                  Feito
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
