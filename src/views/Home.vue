@@ -1,26 +1,50 @@
 <template>
   <v-container fluid>
     <trail
-      title="Trilha 1"
-      abstract="Esta é a primeira trilha de todas. Vamos lá?"
+      title="Trilhas: vamos começar esta jornada!"
+      abstract="Comece agora a explorar o mundo de desenvolvimento do seu filho"
       image-src=""
     />
     <v-container fluid grid-list-md ma-0 pa-0>
       <v-layout row wrap>
-        <v-flex
-          xs12 sm6 md4 lg3 xl3
-          v-for="activity in activities"
-          :key="activity.title"
-        >
-          <activity-card
-            :description="activity.description"
-            :finalized="activity.finalized"
-            :img-src="activity.imgsrc"
-            :title="activity.title"
-          />
+        <v-flex xs12 @click="goToDescobrindoSeuFilho">
+          <v-card color="primary" class="white--text">
+            <v-card-title primary-title>
+              <div>
+                <div class="headline">Descobrindo seu filho</div>
+                <span>O que você precisa saber sobre seu filho?</span>
+              </div>
+            </v-card-title>
+          </v-card>
+        </v-flex>
+        <v-flex xs12>
+          <v-card color="primary" class="white--text">
+            <v-card-title primary-title>
+              <div>
+                <div class="headline">Vamos brincar?</div>
+                <span>
+                  Descubra como você pode desenvolver seu filho através de jogos educativos
+                </span>
+              </div>
+            </v-card-title>
+          </v-card>
+        </v-flex>
+        <v-flex xs12>
+          <v-card>
+            <v-card-title primary-title>
+              <div>
+                <div class="headline">Quero mais trilhas!</div>
+                <span>
+                  Você gostou e quer mais trilhas para desbravar o desenvolvimento do seu filho?
+                  Clique aqui!
+                </span>
+              </div>
+            </v-card-title>
+          </v-card>
         </v-flex>
       </v-layout>
     </v-container>
+    <router-view />
   </v-container>
 </template>
 
@@ -36,31 +60,14 @@ export default {
   },
   data() {
     return {
-      activities: [
-        {
-          title: 'Jogar futebol',
-          description: 'Jogar futebol com os vizinhos no play',
-          imgsrc: 'https://marvel-live.freetls.fastly.net/canvas/2018/9/8f55d061e8c346dbaf28636bb61ea2b4?quality=95&fake=.png',
-          finalized: true,
-        },
-        {
-          title: 'Estudar história',
-          description: 'Utilizar de mídias audiovisuais para estudo de história',
-          imgsrc: 'https://marvel-live.freetls.fastly.net/canvas/2018/9/8f55d061e8c346dbaf28636bb61ea2b4?quality=95&fake=.png',
-          finalized: true,
-        },
-        {
-          title: 'Jogar videogame',
-          description: 'Utilizar de jogos sérios para incentivar o ensino de matemática',
-          imgsrc: 'https://marvel-live.freetls.fastly.net/canvas/2018/9/8f55d061e8c346dbaf28636bb61ea2b4?quality=95&fake=.png',
-        },
-        {
-          title: 'Celebração',
-          description: 'Celebrar o desenvolvimento da trilha',
-          imgsrc: 'https://marvel-live.freetls.fastly.net/canvas/2018/9/8f55d061e8c346dbaf28636bb61ea2b4?quality=95&fake=.png',
-        },
-      ],
+      
     };
+  },
+  methods: {
+    goToDescobrindoSeuFilho() {
+      console.log('opaa');
+      this.$router.push({ name: 'descobrindo' })
+    },
   },
 };
 </script>
