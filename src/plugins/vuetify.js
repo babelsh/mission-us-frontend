@@ -9,4 +9,5 @@ Vue.use(Vuetify, {
     secondary: '#976dd1',
     success: '#77d353',
   },
+  iconfont: 'mdi',
 });
