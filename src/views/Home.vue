@@ -4,32 +4,21 @@
       <v-container fluid grid-list-lg>
         <v-layout row wrap>
           <v-flex xs12>
-            <v-card color="blue darken-1" class="white--text" >
-              <v-layout>            
-                <v-flex xs7>
-                  <v-card-title primary-title>
-                    <div>
-                      <div class="headline">Descobrindo seu filho</div>
-                      <div>O que você precisa saber sobre seu filho?</div>
-                    </div>
-                  </v-card-title>
-                </v-flex>
-                <v-flex xs5>
-                  <div class="text-xs-center">
-                    <v-btn fab dark small color="blue " >
-                      <div class="headline">1</div>
-                    </v-btn>
-                    <v-btn fab dark small color="blue " >
-                      <div class="headline">2</div>
-                    </v-btn>
-                    <v-btn fab dark small color="blue " >
-                      <div class="headline">3</div>                       
-                    </v-btn>
-                  </div>
-                  <div class="text-xs-center">em progresso</div>
-                </v-flex>
-              </v-layout>
-              <v-divider light></v-divider>               
+            <v-card dark flat>
+              <v-img
+                height="200"
+                src="https://www.navegg.com/nvgadm/wp-content/uploads/2016/12/navegg-161212-modelo-de-atribuicao-a-visao-holistica-da-jornada-de-compra-2-940x400.jpg"
+                gradient="to top, rgba(0,0,0,.44), rgba(0,0,0,.44)"
+              >
+                <v-container fill-height>
+                  <v-layout align-center>              
+                    <v-layout column justify-end>
+                      <h3 class="headline mb-0">&nbsp; Trilha: descobrindo seu filho</h3>
+                      <div class="mb-0">&nbsp; &nbsp; Janeiro, 2019</div>
+                    </v-layout>
+                  </v-layout>
+                </v-container>
+              </v-img>
             </v-card>
           </v-flex>    
         </v-layout>
@@ -49,7 +38,7 @@
                 </div>
               </v-flex>
             </v-layout>
-            <v-btn block color="blue" dark>iniciar</v-btn>
+            <v-btn block color="blue" dark @click="goToObjetivo">iniciar</v-btn>
           </v-timeline-item>
   
           <v-timeline-item color="grey">
@@ -113,9 +102,8 @@ export default {
     };
   },
   methods: {
-    goToDescobrindoSeuFilho() {
-      console.log('opaa');
-      this.$router.push({ name: 'descobrindo' })
+    goToObjetivo() {
+      this.$router.push({ name: 'objetivo' });
     },
   },
 };
