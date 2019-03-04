@@ -24,7 +24,7 @@
         </v-layout>
           
         <v-timeline align-top dense>
-          <v-timeline-item color="blue">
+          <v-timeline-item :color="statusColor(1)">
             <v-layout pt-3>            
               <v-flex>
                 <v-avatar>
@@ -38,10 +38,11 @@
                 </div>
               </v-flex>
             </v-layout>
-            <v-btn block color="blue" dark @click="goToObjetivo">iniciar</v-btn>
+            <v-btn v-if="isActive(1)" block color="blue" dark @click="goToObjetivo">iniciar</v-btn>
+            <v-btn v-else block color="grey lighten-1" dark @click="goToObjetivo">rever</v-btn>
           </v-timeline-item>
   
-          <v-timeline-item color="grey">
+          <v-timeline-item :color="statusColor(2)">
             <v-layout wrap pt-3>
               <v-flex>
                 <v-avatar>
@@ -55,7 +56,10 @@
                   Apesar de reconhecer que o carinho dos adultos é importante e influencia o temperamento da criança,
                   apenas 12% da população] considera o afeto importante para o desenvolvimento.
                 </div>
-                 <v-btn block color="grey lighten-1" dark>bloqueado</v-btn>
+                  <v-btn v-if="isActive(2)" block color="blue" dark @click="goToAtividade">
+                    iniciar
+                  </v-btn>
+                  <v-btn v-else block color="grey lighten-1" dark>bloqueado</v-btn>
               </v-flex>
             </v-layout>
           </v-timeline-item>
@@ -76,7 +80,6 @@
           </v-timeline-item>  
         </v-timeline> 
       </v-container>
-
       <v-bottom-nav absolute color="transparent">
         <v-btn flat color="primary">Progresso</v-btn>
         <v-btn flat color="primary">Dúvidas</v-btn>
@@ -96,14 +99,24 @@ export default {
     ActivityCard,
     Trail,
   },
-  data() {
-    return {
-      
-    };
+  props: {
+    step: {
+      type: Number,
+      default: 1,
+    },
   },
   methods: {
     goToObjetivo() {
       this.$router.push({ name: 'objetivo' });
+    },
+    goToAtividade() {
+      this.$router.push({ name: 'atividade' });
+    },
+    statusColor(index) {
+      return this.step === index ? 'blue' : 'grey';
+    },
+    isActive(index) {
+      return this.step === index;
     },
   },
 };
