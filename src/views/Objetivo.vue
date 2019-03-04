@@ -38,10 +38,10 @@
                       <v-icon dark left>skip_previous</v-icon>
                     </v-btn>
                   </v-flex>
-                  <v-flex xs3> 
-                    <div>1 de 2</div>
+                  <v-flex xs2> 
+                    <div>1/2</div>
                   </v-flex>
-                  <v-flex>
+                  <v-flex xs5>
                     <v-btn color="blue darken-2" small dark left>
                       <v-icon dark right @click="goToStep2">skip_next</v-icon>
                     </v-btn>
@@ -92,17 +92,16 @@
                 </v-card-title>
     
               <v-card-actions>      
-                <v-layout align-center>           
+                <v-layout align-center>      
                   <v-flex xs5>     
                     <v-btn color="grey darken-2" small dark>
                       <v-icon dark left>skip_previous</v-icon>
                     </v-btn>  
                   </v-flex>
-                  <v-flex xs2>2 de 2</v-flex>    
-                  <v-flex> 
+                  <v-flex xs2>2/2</v-flex>    
+                  <v-flex xs5> 
                     <v-btn color="green" small dark left @click="concluir">
                       Concluir
-                      <v-icon dark right>skip_next</v-icon> 
                     </v-btn>       
                   </v-flex>  
                 </v-layout>

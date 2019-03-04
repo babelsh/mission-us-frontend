@@ -7,14 +7,14 @@
             <v-card dark flat>
               <v-img
                 height="200"
-                src="https://www.navegg.com/nvgadm/wp-content/uploads/2016/12/navegg-161212-modelo-de-atribuicao-a-visao-holistica-da-jornada-de-compra-2-940x400.jpg"
+                src="https://www.navegg.com/nvgadm/wp-content/uploads/2016/12/navegg-161212-modelo-de-atribuicao-a-visao-holistica-da-jornada-de-compra-2-940x400.jpg"                
                 gradient="to top, rgba(0,0,0,.44), rgba(0,0,0,.44)"
               >
                 <v-container fill-height>
                   <v-layout align-center>              
                     <v-layout column justify-end>
-                      <h3 class="headline mb-0">&nbsp; Trilha: descobrindo seu filho</h3>
-                      <div class="mb-0">&nbsp; &nbsp; Janeiro, 2019</div>
+                      <h3 class="headline mb-0 has-padding">Trilha: descobrindo seu filho</h3>
+                      <div class="mb-0 has-padding">Março, 2019</div>
                     </v-layout>
                   </v-layout>
                 </v-container>
@@ -25,7 +25,7 @@
           
         <v-timeline align-top dense>
           <v-timeline-item :color="statusColor(1)">
-            <v-layout pt-3>            
+            <v-layout pt-3>
               <v-flex>
                 <v-avatar>
                   <v-img
@@ -47,7 +47,7 @@
               <v-flex>
                 <v-avatar>
                   <v-img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnhr8k4XVKfUomGttYdMbEVQafTcRkdyFMvI1YspFltIpoCCv"
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnhr8k4XVKfUomGttYdMbEVQafTcRkdyFMvI1YspFltIpoCCv"
                   />
                 </v-avatar>
                 <strong>Afeto é fundamental</strong>
@@ -69,7 +69,7 @@
               <v-flex>
                 <v-avatar>
                   <v-img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Sl_A75vqKCouBWwshmzdokwnBILnYctL-C4TCw-9XPCocFMyBg"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_Sl_A75vqKCouBWwshmzdokwnBILnYctL-C4TCw-9XPCocFMyBg"                    
                   />
                 </v-avatar>
                 <strong>&nbsp; &nbsp; Aprendizado a toda hora e em todo lugar</strong>
@@ -121,3 +121,9 @@ export default {
   },
 };
 </script>
+<style scoped lang="scss">
+.has-padding {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+</style>

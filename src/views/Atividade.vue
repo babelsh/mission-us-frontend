@@ -28,8 +28,14 @@
           <v-chip >Físico</v-chip>
           </v-flex>  
         </div>
-        <v-btn color="primary" @click="currentStep = 2">Continue</v-btn>
-        <v-btn dark  color="grey" @click="goToHome">Cancelar</v-btn>
+        <v-layout>
+          <v-flex xs5>
+            <v-btn small color="primary" @click="currentStep = 2">Continuar</v-btn>
+          </v-flex>
+          <v-flex xs5>
+            <v-btn small dark flat color="grey" @click="goToHome">Cancelar</v-btn>
+          </v-flex>
+        </v-layout>
       </v-stepper-content>
   
       <v-stepper-step :complete="currentStep > 2" step="2">
@@ -62,8 +68,14 @@
             demonstre expressões de afeto.
           </span>
         </div>
-        <v-btn color="primary" @click="currentStep = 3">Continue</v-btn>
-        <v-btn dark  color="grey"  @click="currentStep = 1">Voltar</v-btn>
+        <v-layout>
+          <v-flex xs5>
+            <v-btn small color="primary" @click="currentStep = 3">Continuar</v-btn>
+          </v-flex>
+          <v-flex xs5>
+            <v-btn small flat dark color="grey"  @click="currentStep = 1">Voltar</v-btn>
+          </v-flex>
+        </v-layout>
       </v-stepper-content>
   
       <v-stepper-step :complete="currentStep > 3" step="3">Conclusão da atividade</v-stepper-step>  
@@ -73,8 +85,16 @@
             Continue reforçando e agradencendo seu filho quando ele demonstra boas ações
             e comportamentos.
           </div>
-          <v-btn color="primary" @click="currentStep = 1">Continue</v-btn>
-          <v-btn dark  color="grey" @click="currentStep = 2">Voltar</v-btn>
+          <v-layout>
+        </v-layout>
+        <v-layout>
+          <v-flex xs5>
+            <v-btn small color="primary" @click="currentStep = 2">Concluir</v-btn>
+          </v-flex>
+          <v-flex xs5>
+            <v-btn small dark flat color="grey" @click="goToHome">Voltar</v-btn>            
+          </v-flex>
+        </v-layout>
         </v-stepper-content>
       </v-stepper>           
     </v-container>           
