@@ -33,7 +33,7 @@
               </v-card-title>
               <v-card-actions>       
                 <v-layout align-center>
-                  <v-flex xs5>
+                  <v-flex xs5 @click="goToHome">
                     <v-btn color="grey darken-2" small dark>
                       <v-icon dark left>skip_previous</v-icon>
                     </v-btn>
@@ -41,9 +41,9 @@
                   <v-flex xs2> 
                     <div>1/2</div>
                   </v-flex>
-                  <v-flex xs5>
+                  <v-flex xs5 @click="step = 2">
                     <v-btn color="blue darken-2" small dark left>
-                      <v-icon dark right @click="goToStep2">skip_next</v-icon>
+                      <v-icon dark right>skip_next</v-icon>
                     </v-btn>
                   </v-flex>
                 </v-layout>
@@ -93,14 +93,14 @@
     
               <v-card-actions>      
                 <v-layout align-center>      
-                  <v-flex xs5>     
+                  <v-flex @click="step = 1" xs5>     
                     <v-btn color="grey darken-2" small dark>
                       <v-icon dark left>skip_previous</v-icon>
                     </v-btn>  
                   </v-flex>
                   <v-flex xs2>2/2</v-flex>    
-                  <v-flex xs5> 
-                    <v-btn color="green" small dark left @click="concluir">
+                  <v-flex xs5 @click="concluir"> 
+                    <v-btn color="green" small dark left>
                       Concluir
                     </v-btn>       
                   </v-flex>  
@@ -131,11 +131,11 @@
       };
     },
     methods: {
-      goToStep2() {
-        this.step = 2;
-      },
       concluir() {
         this.$router.push({ name: 'home', params: { step: 2 } });
+      },
+      goToHome() {
+        this.$router.push({ name: 'home' });
       },
     },
   };

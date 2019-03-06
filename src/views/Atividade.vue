@@ -89,7 +89,7 @@
         </v-layout>
         <v-layout>
           <v-flex xs5>
-            <v-btn small color="primary" @click="currentStep = 2">Concluir</v-btn>
+            <v-btn small color="primary" @click="concluido = true">Concluir</v-btn>
           </v-flex>
           <v-flex xs5>
             <v-btn small dark flat color="grey" @click="goToHome">Voltar</v-btn>            
@@ -97,15 +97,27 @@
         </v-layout>
         </v-stepper-content>
       </v-stepper>           
-    </v-container>           
+    </v-container>
+    <v-dialog
+      v-model="concluido"
+      width="500"
+    >
+      <saber-mais @voltar="concluido = false" />
+    </v-dialog>         
   </v-card>
 </template>
 
 <script>
+import SaberMais from './SaberMais';
+
   export default {
     name: 'Atividade',
+    components: {
+      SaberMais,
+    },
     data() {
       return {
+        concluido: false,
         currentStep: 1,
         items: ['Físico', 'Cognitivo', 'Psicosocial'],
         value: ['Físico', 'Cognitivo', 'Psicosocial'],
