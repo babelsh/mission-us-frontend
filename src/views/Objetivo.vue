@@ -6,7 +6,7 @@
           <v-flex xs12>
             <v-card color="blue darken-1" class="white--text">
               <v-card-title primary-title>
-                <div class="headline">Objetivo</div>
+                <div class="headline">A importância do brincar</div>
               </v-card-title>
             </v-card>
           </v-flex>
@@ -14,21 +14,18 @@
         <v-layout>
           <v-flex xs12>
             <v-card>
-              <v-progress-linear color="blue" height="10" value="25" />
+              <v-progress-linear color="blue" height="10" value="50" />              
               <v-carousel hide-delimiters interval="999000" height="250">
-                <v-carousel-item
-                  v-for="(item,i) in items"
-                  :key="i"
-                  :src="item.src"
-                />
-              </v-carousel>
+                  <v-carousel-item>
+ <center>  <iframe height="250"  src="https://www.youtube.com/embed/E7Qs0afrURI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   </center>                    </v-carousel-item>
+                </v-carousel>              
               <v-card-title primary-title>
                 <div>
-                  <h3 class="headline mb-0">Informações que valem ser divulgadas</h3>
-                  <div>Experiências positivas na primeira infância contribuem para o desenvolvimento
-                    saudável do cérebro, permitindo que a arquitetura cerebral seja sólida e
-                    tenha uma estrutura mais apta a superar dificuldades.
-                  </div>
+                  <h3 class="headline mb-0">Brincar na infância</h3>
+                  <div>Você sabia que crianças que recebem maior atenção dos seus pais possuem um maior QI? 
+                    Um estudo da Universidade da Pensilvânia, EUA, confirmou esse fato. Acompanhando 64 crianças 
+                    desde o nascimento até os 20 anos de idade, pesquisadores constataram que aqueles que recebiam
+                     atenção dos pais possuíam um QI mais alto quando adultos. Neste vídeo a psicóloga Sabrina irá falar sobre alguns benefícios do brincar e a importância para o desenvolvimento da criança.</div>                   
                 </div>
               </v-card-title>
               <v-card-actions>       
@@ -61,7 +58,7 @@
               <v-card color="blue darken-1" class="white--text">
                 <v-card-title primary-title>
                   <div>
-                    <div class="headline">Objetivo</div>
+                    <div class="headline">Brincar e educar</div>
                   </div>
                 </v-card-title>
               </v-card>
@@ -72,22 +69,16 @@
               <v-card>
                 <v-progress-linear color="green" height="10" value="100"/>
                 <v-carousel hide-delimiters interval="999000" height="250">
-                  <v-carousel-item
-                    v-for="(item,i) in items"
-                    :key="i"
-                    :src="item.src"
-                  />
+                  <v-carousel-item>
+                    <center> <iframe height="250"  src="https://www.youtube.com/embed/DdMWsvMxjIQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </center>
+                    </v-carousel-item>
                 </v-carousel>
                 <v-card-title primary-title>
-                    <h3 class="headline mb-0">O desenvolvimento pleno</h3>
+                    <h3 class="headline mb-0">Brinquedos pedagógicos com a Educaliv</h3>
                     <div>
-                      Enfatize, sempre que possível, a importância dos estímulos
-                      adequados ao desenvolvimento da criança, explicando o que pode ser feito
-                      em cada fase. Para um recém-nascido, por exemplo, massagens e carinho
-                      são estímulos importantes ao desenvolvimento sensorial e ajudam o bebê a
-                      perceber as partes do próprio corpo. Para crianças maiores, o
-                      desenvolvimento motor pode ser estimulado com brincadeiras, como pular,
-                      rodar, correr e jogar bola.
+                      A essência da infância está nos momentos que a criança tem para a exploração: o faz de conta, 
+                      a brincadeira e o jogo. Os brinquedos pedagógicos são os aliados dos pais nestes momentos especiais. 
+                      Neste vídeo você irá conhecer dois destes brinquedos e uma loja especializada em jogos de inclusão, pedagógicos e de desafio.
                     </div>
                 </v-card-title>
     

@@ -5,7 +5,7 @@
         <v-flex xs12>
           <v-card color="blue darken-1" class="white--text">
             <v-card-title primary-title>
-              <div class="headline">Atividade: Reforço no desenvolvimento da criança </div>
+              <div class="headline">Atividade </div>
             </v-card-title>
           </v-card>
         </v-flex>               
@@ -18,14 +18,12 @@
       <v-stepper-content step="1">      
         <div class="has-margin-bottom">
           <h3>O objetivo desta atividade:</h3>
-          <span>Praticar exercícios para estimulação de comportamentos desejáveis</span>         
+          <span>Praticar exercícios para estimulação de desenvolvimento social</span>         
         </div>       
         <div class="has-margin-bottom">
           <h3>Áreas do desenvolvimento humano envolvidas nesta atividade</h3>
           <v-flex xs12 sm9>
-          <v-chip >Psicosocial</v-chip>
-          <v-chip >Cognitivo</v-chip>
-          <v-chip >Físico</v-chip>
+          <v-chip >Psicosocial</v-chip>     
           </v-flex>  
         </div>
         <v-layout>
@@ -53,9 +51,9 @@
         </div>  
         <div class="has-margin-bottom">
           <h3>Etapa 1</h3>        
-          <span> Peça ao seu filho para que ele pegue seus brinquedos.</span> 
+          <span> Peça ao seu filho escolher uma brincadeira para vocês brincarem</span> 
           <h3>Etapa 2</h3>           
-          <span> Brinque com seu filho e após a brincadeira peça para que ele guarde os brinquedos em um local adequado.</span> 
+          <span> Brinque com seu filho e ao longo da brincadeira questione quais os motivos dele gostar</span> 
           <h3>Etapa 3</h3>           
           <span>
             Após finalizar a organização, agradeça ele pela sua dedicação e carinho,
