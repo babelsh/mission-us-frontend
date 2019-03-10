@@ -4,7 +4,7 @@ module.exports = {
     name: 'Missão Nós',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
-    themeColor: '#fd9051',
+    themeColor: '#007ec1',
     msTileColor: '#FFF',
     iconPaths: {
       favicon16: 'public/img/icons/favicon-16x16.png',

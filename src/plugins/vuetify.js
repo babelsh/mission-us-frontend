@@ -5,8 +5,9 @@ import 'vuetify/dist/vuetify.min.css';
 Vue.use(Vuetify, {
   theme: {
     error: '#f66',
-    primary: '#fd9051',
+    primary: '#007ec1',
     secondary: '#976dd1',
     success: '#77d353',
   },
+  iconfont: 'mdi',
 });

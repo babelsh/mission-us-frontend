@@ -27,7 +27,7 @@
     </v-layout>
     <v-layout align-center justify-center>
       <v-flex xs10 lg2>
-        <v-btn color="primary" block>Prosseguir</v-btn>
+        <v-btn color="primary" block @click="goToHome">Prosseguir</v-btn>
       </v-flex>
     </v-layout>
   </v-container>
@@ -40,6 +40,11 @@ export default {
     return {
       showPassword: false,
     };
+  },
+  methods: {
+    goToHome() {
+      this.$router.push({ name: 'home' });
+    },
   },
 };
 </script>

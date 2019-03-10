@@ -11,11 +11,6 @@
     <p class="body-2 grey--text text-truncate">
       {{ abstract }}
     </p>
-    <v-layout>
-      <v-flex xs12 :text-xs-right="isSmall">
-        <v-btn class="primary">SABER MAIS</v-btn>
-      </v-flex>
-    </v-layout>
   </v-container>
 </template>
 
