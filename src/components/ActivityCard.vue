@@ -15,18 +15,6 @@
           </p>
         </div>
       </v-card-title>
-      <v-card-actions class="no-padding-top">
-        <v-btn flat>
-          Saber mais
-        </v-btn>
-        <v-spacer />
-        <v-icon color="success" v-if="finalized">
-          done
-        </v-icon>
-        <v-btn color="primary" v-else>
-          Feito
-        </v-btn>
-      </v-card-actions>
     </v-card>
   </v-container>
 </template>
